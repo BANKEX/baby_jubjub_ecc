@@ -1,3 +1,7 @@
+# Source
+
+https://gist.github.com/swasilyev/40df49c3ab4dabe854027a8791460d6d
+
 # baby\_jubjub\_ecc
 
 This repository contains zksnark constarint systems for [twisted edwards curve](https://github.com/barryWhiteHat/baby_jubjub) 
@@ -9,7 +13,8 @@ This is a naive implmentaion and considerable optimizations are possible.
 ## build instructions:
 
 ### build libsnark gadget and getting the proving key
-get dependencies `git submodule update --init --recursive`
+`apt update && apt install -y build-essential cmake git libgmp3-dev libprocps4-dev python-markdown libboost-all-dev libssl-dev pkg-config`
+`git submodule update --init --recursive`
 `mkdir build` 
 `cd build`
 `cmake .. && make`
